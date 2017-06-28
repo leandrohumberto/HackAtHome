@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace HackAtHome
 {
-    [Activity(Label = "HackAtHome", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "@string/ApplicationName", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -12,7 +12,7 @@ namespace HackAtHome
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
-            // SetContentView (Resource.Layout.Main);
+            SetContentView(Resource.Layout.Main);
         }
     }
 }

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <TextView
+            android:text="@string/EmailTextLabel"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_marginBottom="5dp"
+            android:gravity="right" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextEmail"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:text="@string/PasswordTextLabel"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginBottom="5dp"
+            android:gravity="right" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPassword"
+            android:layout_marginBottom="20dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="8dp" />
+    </LinearLayout>
+    <Button
+        android:text="@string/ValidateButtonLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonValidate"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+</LinearLayout>
