@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("HackAtHome.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("HackAtHome.SAL.Resource", IsApplication=false)]
 
-namespace HackAtHome
+namespace HackAtHome.SAL
 {
 	
 	
@@ -24,30 +24,14 @@ namespace HackAtHome
 			global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 		}
 		
-		public static void UpdateIdValues()
-		{
-			global::HackAtHome.CustomAdapters.Resource.String.ApplicationName = global::HackAtHome.Resource.String.ApplicationName;
-			global::HackAtHome.CustomAdapters.Resource.String.Hello = global::HackAtHome.Resource.String.Hello;
-			global::HackAtHome.Entities.Resource.String.ApplicationName = global::HackAtHome.Resource.String.ApplicationName;
-			global::HackAtHome.Entities.Resource.String.Hello = global::HackAtHome.Resource.String.Hello;
-			global::HackAtHome.SAL.Resource.Animation.slide_in_right = global::HackAtHome.Resource.Animation.slide_in_right;
-			global::HackAtHome.SAL.Resource.Animation.slide_out_left = global::HackAtHome.Resource.Animation.slide_out_left;
-			global::HackAtHome.SAL.Resource.Drawable.ic_arrow_back = global::HackAtHome.Resource.Drawable.ic_arrow_back;
-			global::HackAtHome.SAL.Resource.Id.webview = global::HackAtHome.Resource.Id.webview;
-			global::HackAtHome.SAL.Resource.Layout.activity_webview = global::HackAtHome.Resource.Layout.activity_webview;
-			global::HackAtHome.SAL.Resource.String.ApplicationName = global::HackAtHome.Resource.String.ApplicationName;
-			global::HackAtHome.SAL.Resource.String.Hello = global::HackAtHome.Resource.String.Hello;
-			global::HackAtHome.SAL.Resource.String.title_activity_webview = global::HackAtHome.Resource.String.title_activity_webview;
-		}
-		
 		public partial class Animation
 		{
 			
 			// aapt resource value: 0x7f040000
-			public const int slide_in_right = 2130968576;
+			public static int slide_in_right = 2130968576;
 			
 			// aapt resource value: 0x7f040001
-			public const int slide_out_left = 2130968577;
+			public static int slide_out_left = 2130968577;
 			
 			static Animation()
 			{
@@ -76,10 +60,7 @@ namespace HackAtHome
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int ic_arrow_back = 2130837504;
-			
-			// aapt resource value: 0x7f020001
-			public const int Icon = 2130837505;
+			public static int ic_arrow_back = 2130837504;
 			
 			static Drawable()
 			{
@@ -95,7 +76,7 @@ namespace HackAtHome
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int webview = 2131099648;
+			public static int webview = 2131099648;
 			
 			static Id()
 			{
@@ -111,10 +92,7 @@ namespace HackAtHome
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int activity_webview = 2130903040;
-			
-			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public static int activity_webview = 2130903040;
 			
 			static Layout()
 			{
@@ -130,13 +108,13 @@ namespace HackAtHome
 		{
 			
 			// aapt resource value: 0x7f050001
-			public const int ApplicationName = 2131034113;
+			public static int ApplicationName = 2131034113;
 			
 			// aapt resource value: 0x7f050000
-			public const int Hello = 2131034112;
+			public static int Hello = 2131034112;
 			
 			// aapt resource value: 0x7f050002
-			public const int title_activity_webview = 2131034114;
+			public static int title_activity_webview = 2131034114;
 			
 			static String()
 			{
