@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+    <TextView
+        android:text="FullName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewFullNameDetail"
+        android:layout_marginBottom="10dp"
+        android:gravity="right" />
+    <TextView
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEvidenceTitleDetail"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:text="Status"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEvidenceStatusDetail"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+    <TextView
+        android:text="@string/DescriptionTextLabel"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEvidenceDescriptionLabelDetail"
+        android:gravity="left"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:text="Description Description Description Description Description Description Description "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewEvidenceDescriptionDetail"
+        android:gravity="left"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <ImageView
+        android:src="@android:drawable/ic_menu_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewEvidence" />
+</LinearLayout>

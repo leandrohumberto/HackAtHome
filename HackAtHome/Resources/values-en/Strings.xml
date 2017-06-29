@@ -5,4 +5,5 @@
   <string name="PasswordTextLabel">Password:</string>
   <string name="ValidateButtonLabel">Validate</string>
   <string name="EvidencesTextLabel">Evidences</string>
+  <string name="DescriptionTextLabel">Description</string>
 </resources>

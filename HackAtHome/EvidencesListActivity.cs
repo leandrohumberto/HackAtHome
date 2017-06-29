@@ -54,6 +54,26 @@ namespace HackAtHome
 
             listView.Adapter = new CustomAdapters.EvidencesAdapter(this, _evidences.Evidences, Resource.Layout.ListItem, 
                 Resource.Id.textViewEvidenceTitle, Resource.Id.textViewEvidenceStatus);
+
+            listView.ItemClick += async (IntentSender, e) =>
+            {
+                var evidenceDetail = await _serviceClient.GetEvidenceByIDAsync(_token, 
+                    _evidences.Evidences[e.Position].EvidenceID);
+
+                if (evidenceDetail != null)
+                {
+                    var activityIntent = new Intent(this, typeof(EvidenceDetailActivity));
+                    activityIntent.PutStringArrayListExtra("evidence_data", new List<string>
+                    {
+                        _fullName,
+                        _evidences.Evidences[e.Position].Title,
+                        evidenceDetail.Description,
+                        evidenceDetail.Url,
+                        _evidences.Evidences[e.Position].Status,
+                    });
+                    StartActivity(activityIntent);
+                }
+            };
         }
     }
 }

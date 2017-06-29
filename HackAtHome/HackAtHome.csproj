@@ -51,8 +51,12 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="UrlImageViewHelper">
+      <HintPath>..\Components\urlimageviewhelper-1.0.4.2\lib\android\UrlImageViewHelper.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EvidenceDetailActivity.cs" />
     <Compile Include="EvidencesListActivity.cs" />
     <Compile Include="Fragments\EvidencesFragment.cs" />
     <Compile Include="MainActivity.cs" />
@@ -71,6 +75,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout-land\ListItem.axml" />
+    <AndroidResource Include="Resources\layout\EvidenceDetail.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
