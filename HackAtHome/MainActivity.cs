@@ -3,6 +3,8 @@ using Android.Widget;
 using Android.OS;
 using HackAtHome.Entities;
 using HackAtHome.SAL;
+using Android.Content;
+using System.Collections.Generic;
 
 namespace HackAtHome
 {
@@ -25,12 +27,13 @@ namespace HackAtHome
 
                 if (result.Status == Status.AllSuccess || result.Status == Status.Success)
                 {
-                    var dialog = new AlertDialog.Builder(this).Create();
-                    dialog.SetButton("OK", delegate { });
-                    dialog.SetMessage($"{result.Status}\n{result.FullName}\n{result.Token}");
-                    dialog.SetTitle("Done");
-                    dialog.SetIcon(Android.Resource.Drawable.PresenceOnline);
-                    dialog.Show();
+                    var activityIntent = new Intent(this, typeof(EvidencesListActivity));
+                    activityIntent.PutStringArrayListExtra("auth_data", new List<string>
+                    {
+                        result.FullName, 
+                        result.Token,
+                    });
+                    StartActivity(activityIntent);
                 }
                 else
                 {
