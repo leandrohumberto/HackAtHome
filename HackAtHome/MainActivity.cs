@@ -27,6 +27,7 @@ namespace HackAtHome
 
                 if (result.Status == Status.AllSuccess || result.Status == Status.Success)
                 {
+                    SendEvidence(email);
                     var activityIntent = new Intent(this, typeof(EvidencesListActivity));
                     activityIntent.PutStringArrayListExtra("auth_data", new List<string>
                     {
@@ -45,6 +46,13 @@ namespace HackAtHome
                     dialog.Show();
                 }
             };
+        }
+
+        private async void SendEvidence(string email)
+        {
+            MicrosoftServiceClient client = new MicrosoftServiceClient();
+            await client.SendEvidence(new LabItem { Email = email, Lab = "Hack@Home", DeviceId =
+                Android.Provider.Settings.Secure.GetString(ContentResolver, Android.Provider.Settings.Secure.AndroidId)});
         }
     }
 }
